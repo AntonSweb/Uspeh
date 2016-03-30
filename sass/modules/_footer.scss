@@ -1,0 +1,9 @@
+//Footer in bottom (always)
+
+html {height: 100%}
+body {min-height: 100%; position: relative; padding-bottom: 260px;}
+#panel-bootstrap-row-3 {position: absolute; width: 100%; bottom: 0;}
+
+@media screen and (max-width: 768px) {
+  body {padding-bottom: 441px;}
+}

@@ -1,0 +1,19 @@
+// Ubuntu Light
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300&subset=latin,cyrillic);
+
+// Corinthia
+@include font-face("Corinthia", font-files(
+    "/sites/all/themes/uspeh/fonts/corinthia/corinthia.ttf",
+    "/sites/all/themes/uspeh/fonts/corinthia/corinthia.eot",
+    "/sites/all/themes/uspeh/fonts/corinthia/corinthia.woff2",
+    "/sites/all/themes/uspeh/fonts/corinthia/corinthia.woff",
+    "/sites/all/themes/uspeh/fonts/corinthia/corinthia.svg"
+));
+
+$base-font: 'Ubuntu', 'Arial', 'Helvetica', sans-serif;
+$font-title: 'Corinthia', 'Arial', 'Helvetica', sans-serif;
+
+$border: 1px solid #01a002;
+$color-h: #01a002;
+$color-text: #303130;
+$color-pink: #F41883;

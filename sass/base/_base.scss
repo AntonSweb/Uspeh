@@ -1,0 +1,70 @@
+
+.panel-pane{
+  @extend .container;
+}
+
+h1{
+  font-style: $font-title;
+  color: $color-h;
+}
+
+h2{
+  font-family: $base-font;
+  font-size: 27px;
+  font-weight: 400;
+  color: $color-h;
+}
+
+.pane-page-content {
+
+  ul {
+    list-style-type: none;
+
+    li {
+      font-family: $base-font;
+      font-size: 19px;
+      font-weight: 300;
+      color: $color-text;
+    }
+
+    a {
+      color: $color-text;
+      &:hover{
+        color: lighten(#303130, 15%);
+      }
+    }
+  }
+
+  p{
+    font-family: $base-font;
+    font-size: 16px;
+    font-weight: 300;
+    color: $color-text;
+
+    em{
+      font-style: normal;
+      font-weight: 400;
+      color: $color-pink;
+    }
+
+    strong{
+      color: $color-h;
+      font-weight: 400;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,140 @@
+.page-node-5{
+
+  h1{
+    margin-left: 40px;
+    margin-bottom: 15px;
+  }
+
+  h2{
+    padding-left: 15px;
+  }
+
+  p{
+  padding-left: 40px;
+  }
+
+  #business-sector p, #training-program p{
+    padding-left: 15px;
+  }
+
+  .pane-page-content{
+
+    img{
+      -webkit-transform: translateY(-84px);
+      -moz-transform: translateY(-84px);
+      -ms-transform: translateY(-84px);
+      -o-transform: translateY(-84px);
+      transform: translateY(-84px);
+    }
+
+    ul li{padding-left: 28px;}
+
+    .top-left {
+      ul {
+        margin-bottom: 51px;
+        li {
+          background: url("../img/leaf-top-left.png") no-repeat 0 5px;
+          margin-bottom: 9px;
+        }
+      }
+    }
+
+    .top-right{
+      ul {
+        margin-bottom: 64px;
+        li {
+          background: url("../img/leaf-top-right.png") no-repeat 0 5px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .right-bottom{
+      ul {
+        margin-bottom: 70px;
+        li {
+          background: url("../img/leaf-right-bottom.png") no-repeat 0 5px;
+          margin-bottom: 18px;
+        }
+      }
+    }
+
+    .left-bottom{
+      ul{
+        margin-bottom: 0;
+        padding-bottom: 103px;
+        border-bottom: $border;
+        li{
+          background: url("../img/leaf-top-left.png") no-repeat 0 5px;
+          margin-bottom: 22px;
+        }
+      }
+    }
+
+    #what-tasks {
+      padding-bottom: 35px;
+      border-bottom: $border;
+      h2 {
+        margin-top: 40px;
+      }
+    }
+
+    #fix-result, #conversion, #training-program{
+      padding-bottom: 30px;
+      border-bottom: $border;
+    }
+
+    #business-sector{
+      padding-bottom: 44px;
+      border-bottom: $border;
+      em{
+        font-size: 19px;
+      }
+    }
+
+    p.rtecenter {
+      padding-left: 0;
+      font-size: 19px;
+    }
+
+    p.email:after{
+      content: "NataliaFadina@mail.ru";
+      font-weight: 400;
+      color: $color-pink;
+    }
+
+    h2.rtecenter{
+      margin-top: 30px;
+      margin-bottom: 20px;
+      }
+
+    h3.rtecenter{
+      margin-top: 45px;
+      color: $color-pink;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

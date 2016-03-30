@@ -1,0 +1,44 @@
+name = Uspeh Theme
+description = Start based on Bootstrap Framework.
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/style.css
+
+;;;;;;;;;;;;;;;;;;;;;
+;; JavaScripts
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = js/global.js
+;scripts[] = js/jquery.backTop.min.js
+;scripts[] = js/jquery.mobile.custom.min.js
+;scripts[] = js/jQuery.scrollSpeed.js
+;scripts[] = js/parallax.min.js
+;scripts[] = js/scrollup.js
+scripts[] = js/smoothscroll.js
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Panels layouts
+;;;;;;;;;;;;;;;;;;;;;
+plugins[panels][layouts] = layouts
