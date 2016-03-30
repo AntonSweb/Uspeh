@@ -1,16 +1,17 @@
 .page-node-5{
 
   h1{
-    margin-left: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    padding-left: 33px;
+    font-size: 51px;
   }
 
   h2{
-    padding-left: 15px;
+    padding-left: 25px;
   }
 
   p{
-  padding-left: 40px;
+  padding-left: 48px;
   }
 
   #business-sector p, #training-program p{
@@ -27,7 +28,15 @@
       transform: translateY(-84px);
     }
 
-    ul li{padding-left: 28px;}
+    ul {
+      margin-left: 10px;
+      padding-left: 20px;
+      li {
+        padding-left: 28px;
+        text-shadow: 0.1px 0 $color-text;
+        color: $color-text;
+      }
+    }
 
     .top-left {
       ul {
@@ -79,7 +88,7 @@
       }
     }
 
-    #fix-result, #conversion, #training-program{
+    #fix-result, #conversion{
       padding-bottom: 30px;
       border-bottom: $border;
     }
@@ -87,8 +96,18 @@
     #business-sector{
       padding-bottom: 44px;
       border-bottom: $border;
+      p{
+        padding-left: 25px;
+      }
       em{
         font-size: 19px;
+      }
+    }
+
+    #training-program{
+      @extend #conversion;
+      p{
+        padding-left: 25px;
       }
     }
 
@@ -97,19 +116,24 @@
       font-size: 19px;
     }
 
-    p.email:after{
+    .rtecenter:nth-of-type(2):after{
       content: "NataliaFadina@mail.ru";
       font-weight: 400;
       color: $color-pink;
     }
 
     h2.rtecenter{
+      font-family: $font-title;
+      font-size: 64px;
       margin-top: 30px;
-      margin-bottom: 20px;
+      margin-bottom: 14px;
+      padding-left: 0;
       }
 
     h3.rtecenter{
-      margin-top: 45px;
+      margin-top: 48px;
+      font-family: $font-title;
+      font-size: 40px;
       color: $color-pink;
     }
   }

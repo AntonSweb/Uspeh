@@ -3,8 +3,12 @@
   @extend .container;
 }
 
+.pane-pane-messages{
+  padding-left: 30px;
+}
+
 h1{
-  font-style: $font-title;
+  font-family: $font-title;
   color: $color-h;
 }
 
@@ -24,7 +28,6 @@ h2{
       font-family: $base-font;
       font-size: 19px;
       font-weight: 300;
-      color: $color-text;
     }
 
     a {
