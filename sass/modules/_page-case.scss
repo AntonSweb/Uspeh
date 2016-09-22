@@ -1,0 +1,117 @@
+.node-type-case {
+
+  .pane-node-content {
+    margin: 0 auto;
+    max-width: 755px;
+
+    .pane-title {
+      margin-top: 30px;
+      padding-bottom: 10px;
+      font-family: $base-font;
+      font-size: 27px;
+      text-align: center;
+      border-bottom: 1px solid $color-pink;
+      @media screen and (max-width: 375px) {
+        font-size: 24px;
+      }
+    }
+
+    .field{
+      margin-bottom: 22px;
+
+      &:last-child{
+        margin-bottom: 35px;
+      }
+    }
+
+    .field-name-field-object{
+      margin-bottom: 30px;
+      text-align: center;
+
+      .field-item{
+        font-size: 19px;
+        font-weight: 400;
+        color: $color-h;
+      }
+    }
+
+    .field-type-image{
+
+      img{
+        margin: 0 auto;
+      }
+    }
+
+    .field-type-text-long{
+
+      .field-label{
+        margin-bottom: 10px;
+        padding-top: 12px;
+        padding-left: 70px;
+        font-size: 19px;
+        font-weight: 400;
+        color: $color-h;
+      }
+
+      .field-item{
+        line-height: 1.3;
+
+        p{
+          padding-left: 70px;
+        }
+
+        ul{
+          padding-left: 63px;
+
+          li{
+            padding-left: 10px;
+            background: url("../img/marker.png") no-repeat 0 9px;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+
+    .field-name-field-situation{
+      background: url("../img/situation.png") no-repeat;
+    }
+
+    .field-name-field-tasks{
+      background: url("../img/tasks.png") no-repeat;
+    }
+
+    .field-name-field-new-details{
+      background: url("../img/diagnostics.png") no-repeat;
+    }
+
+    .field-name-field-solution{
+      background: url("../img/solution.png") no-repeat;
+    }
+
+    .field-name-field-results{
+      background: url("../img/results.png") no-repeat;
+    }
+  }
+
+  .pane-page-content {
+
+    .pane-custom {
+      margin-bottom: 60px;
+      text-align: center;
+
+      a {
+        padding-bottom: 2px;
+        font-size: 19px;
+        font-weight: 400;
+        color: $color-h;
+        border-bottom: 1px solid $color-h;
+
+        &:hover {
+          color: $color-pink;
+          text-decoration: none;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

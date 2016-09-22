@@ -1,0 +1,317 @@
+
+// Clients reviews
+#mini-panel-reviews {
+  margin-top: 38px;
+  margin-bottom: 45px;
+
+  .panel-col{
+    @extend .container;
+
+    &>div{
+      @include make-row();
+    }
+  }
+
+  .reviews-text {
+    @include make-sm-column(10);
+    @include make-md-column(8);
+    @include make-md-column-offset(2);
+    @include make-lg-column(7);
+    @include make-lg-column-offset(0);
+    @media screen and (min-width: 767px) and (max-width: 1199px){
+      padding-right: 0;
+    }
+    @media screen and (max-width: 991px){
+      padding-bottom: 35px;
+      width: 100%;
+      border-bottom: 1px solid $color-h;
+
+      //Reviews text block
+      #node-22{
+        @include make-sm-column-offset(1);
+      }
+    }
+    @media screen and (max-width: 767px){
+      padding-bottom: 20px;
+    }
+
+    .field-item{
+      @include make-row();
+
+      .reviews-item{
+        @include make-xs-column(12);
+        @include make-sm-column(6);
+        padding-right: 0;
+        padding-left: 0;
+        max-width: 326px;
+        height: 118px;
+        @media screen and (max-width: 767px) {
+          margin-bottom: 10px;
+          padding-left: 30px;
+          padding-right: 30px;
+          max-width: 100%;
+        }
+        @media screen and (max-width: 440px) {
+          height: auto;
+        }
+        @media screen and (max-width: 325px) {
+          margin-bottom: 20px;
+        }
+
+
+        &:nth-child(2n):not(.suzuki){
+          max-width: 313px;
+          @media screen and (max-width: 767px) {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .mts, .loreal{
+        height: 131px;
+      }
+
+      .mts{
+        @media screen and (max-width: 325px) {
+         height: 150px;
+        }
+      }
+
+      .mts-photo, .subaru{
+        height: 153px;
+        @media screen and (max-width: 767px) {
+          height: auto;
+        }
+      }
+
+      .mts-photo{
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+
+      .subaru{
+        padding-left: 5px;
+        @media screen and (max-width: 767px) {
+          padding-left: 30px;
+        }
+
+        h4{
+          line-height: 1.2;
+        }
+      }
+
+      .loreal h3{
+        margin-top: 10px;
+        @media screen and (max-width: 767px) {
+          margin-top: 0;
+        }
+      }
+
+      .number{
+        float: right;
+        max-width: 180px;
+        @media screen and (max-width: 991px) {
+          max-width: 168px;
+        }
+        @media screen and (max-width: 767px) {
+          float: left;
+          margin-right: 5px;
+          max-width: 144px;
+        }
+        @media screen and (max-width: 440px) {
+          width: 38%;
+        }
+      }
+    }
+
+    img{
+      float: left;
+      margin-right: 5px;
+      @media screen and (max-width: 440px) {
+        width: 38%;
+        height: auto;
+      }
+    }
+
+    .subaru img{
+      float: right;
+      margin-right: 0;
+      @media screen and (max-width: 767px) {
+        float: left;
+        margin-right: 5px;
+        max-width: 144px;
+        height: auto;
+      }
+    }
+
+    .mts-photo img{
+      margin-right: 0;
+      @media screen and (max-width: 991px) {
+        max-width: 326px;
+      }
+    }
+
+    .suzuki img{
+      margin-right: 3px;
+      @media screen and (max-width: 767px) {
+        margin-right: 5px;
+      }
+    }
+
+    h2{
+      margin: 0;
+      padding: 0;
+
+      &:first-of-type{
+        font-size: 62px;
+        @media screen and (max-width: 440px) {
+         font-size: 42px;
+        }
+      }
+
+      &:last-of-type{
+        padding-bottom: 8px;
+        font-size: 24px;
+        line-height: 1.2;
+        @media screen and (max-width: 440px) {
+          font-size: 18px;
+        }
+      }
+    }
+
+    h3 {
+      font-family: $font-front;
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+      color: black;
+      text-align: left;
+    }
+
+    h4{
+      margin: 2px 0 -2px 0;
+      font-family: 'Opnen Sans Condensed', sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      color: #736f6f;
+      line-height: 1;
+      letter-spacing: -1px;
+      word-spacing: 0;
+    }
+
+    p{
+      @extend  h4;
+      font-size: 14px;
+      color: #111111;
+      @media screen and (max-width: 440px) {
+        float: left;
+        width: 60%;
+      }
+      @media screen and (max-width: 325px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .pane-views-video-reviews-block {
+    @include make-sm-column(10);
+    @include make-sm-column-offset(1);
+    @include make-md-column(9);
+    @include make-md-column-offset(1.5);
+    @include make-lg-column(5);
+    @include make-lg-column-offset(0);
+    @media screen and (max-width: 1199px) {
+      margin-top: 15px;
+    }
+    @media screen and (max-width: 767px){
+      margin-top: 35px;
+    }
+
+
+    .field-content {
+      @include make-row();
+      @media screen and (max-width: 991px) {
+        margin: 20px auto 0 auto;
+        max-width: 480px;
+      }
+      @media screen and (max-width: 520px) {
+       max-width: 240px;
+      }
+
+      a {
+        @include make-xs-column(6);
+        max-width: 240px;
+        padding: 0;
+        text-decoration: none;
+
+        &:after{
+          @include transition(color 0.3s ease-in-out);
+          font-family: FontAwesome;
+          content: "\f16a";
+          position: absolute;
+          font-size: 2.5em;
+          width: 30px;
+          top: 50%;
+          right: 50%;
+          margin-top: -10px;
+          margin-right: -15px;
+          color: #1f1f1e;
+          background: white;
+          opacity: 0.8;
+          line-height: 0.5;
+          border-radius: 10px;
+        }
+
+        &:hover{
+          text-decoration: none;
+
+          &:after{
+            @include transition(color 0.3s ease-in-out);
+            color: #cc181e;
+            opacity: 1;
+          }
+        }
+
+        img{
+          max-width: 240px;
+          height: 135px;
+        }
+        @media screen and (max-width: 520px) {
+          margin-bottom: 5px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  //Video edit link
+  .pane-custom a{
+    display: block;
+    margin: 0 auto;
+    width: 68%;
+    text-align: right;
+
+    @media screen and (max-width: 1199px){
+      width: 50%;
+      text-align: center;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

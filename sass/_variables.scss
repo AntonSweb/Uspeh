@@ -1,19 +1,55 @@
 // Ubuntu Light
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300&subset=latin,cyrillic);
 
+//Roboto Light
+@import url(https://fonts.googleapis.com/css?family=Roboto:300italic);
+
+// Opnen Sans Condensed Light
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+//Fonts
 // Corinthia
-@include font-face("Corinthia", font-files(
-  "/sites/all/themes/uspeh/fonts/corinthia/corinthia.ttf",
-  "/sites/all/themes/uspeh/fonts/corinthia/corinthia.eot",
-  "/sites/all/themes/uspeh/fonts/corinthia/corinthia.woff2",
-  "/sites/all/themes/uspeh/fonts/corinthia/corinthia.woff",
-  "/sites/all/themes/uspeh/fonts/corinthia/corinthia.svg"
+@include font-face("Corinthia", inline-font-files(
+  "/corinthia/corinthia.ttf", truetype,
+  "/corinthia/corinthia.eot", eot,
+  "/corinthia/corinthia.woff", woff,
+  "/corinthia/corinthia.svg", svg
 ));
 
+// Bodoni
+@include font-face("BodoniItalic", inline-font-files(
+    "/bodoni/BodoniItalic.ttf", truetype,
+    "/bodoni/BodoniItalic.eot", eot,
+    "/bodoni/BodoniItalic.woff", woff,
+    "/bodoni/BodoniItalic.svg", svg
+));
+
+// Lobster
+@include font-face("Lobster-webfont", inline-font-files(
+    "/lobster/lobster-webfont.ttf", truetype,
+    "/lobster/lobster-webfont.eot", eot,
+    "/lobster/lobster-webfont.woff", woff,
+    "/lobster/lobster-webfont.svg", svg
+));
+
+//Variables
 $base-font: 'Ubuntu', 'Arial', 'Helvetica', sans-serif;
 $font-title: 'Corinthia', 'Arial', 'Helvetica', sans-serif;
+$font-stack: 'BodoniItalic', 'Bodoni', 'Arial', 'Helvetica', serif;
+$font-front: 'Lobster-webfont', 'Lobster', 'Arial', 'Helvetica', sans-serif;
 
 $border: 1px solid #01a002;
 $color-h: #01a002;
 $color-text: #303130;
 $color-pink: #F655A0;
+$color-page9: #F655A0;
+
+// Front page, alive trainings block
+$x2: 50px;
+$x3: 88px;
+$x4: 126px;
+$x5: 164px;
+$x2_minus: 10px;
+$x3_minus: 15px;
+$x4_minus: 20px;
+$x5_minus: 24px;

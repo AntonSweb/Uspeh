@@ -3,11 +3,21 @@
  * Override or insert variables for the page templates.
  */
 function uspeh_preprocess_html (&$vars) {
-  // Add Font Awesome
-  // drupal_add_css('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array('group' => CSS_THEME, 'type' => 'external'));
-
-  // Add Local styles
-  drupal_add_css('http://localhost/dev/uspeh/css/style.css', array('group' => CSS_THEME, 'type' => 'external'));
+  //Add noindex meta tag to dynamic page, when clean url enable
+  if (!empty($GLOBALS['conf']['clean_url'])) {
+    $current_uri = request_uri();
+    $dynamic = strpos($current_uri, "?");
+    if($dynamic == TRUE) {
+      $noindex = array(
+        '#tag' => 'meta',
+        '#attributes' => array(
+          'name' => 'robots',
+          'content' => "noindex, follow",
+        ),
+      );
+      drupal_add_html_head($noindex, 'noindex_follow');
+    }
+  }
 }
 
 /**

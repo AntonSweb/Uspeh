@@ -1,0 +1,340 @@
+ .page-cases, .page-programs {
+
+   .pane-page-title {
+     margin-bottom: 45px;
+     text-align: center;
+   }
+
+   #edit-tid-wrapper {
+     @media screen and (min-width: 991px) and (max-width: 1199px) {
+       padding-left: 175px;
+     }
+
+     .form-type-bef-link:not(:nth-child(4)){
+       border-right: 1px solid $color-pink;
+       @media screen and (max-width: 767px) {
+         border: none;
+       }
+     }
+   }
+ }
+
+.page-cases{
+
+ .view-case {
+
+   .view-content {
+     @include make-row();
+     padding: 0 15px;
+
+     .views-row-odd {
+       margin-right: 3.5%;
+       @media screen and (max-width: 1199px) {
+         margin-right: 0;
+       }
+     }
+
+     .views-row {
+       @include make-xs-column(12);
+       @include make-sm-column(9);
+       @include make-sm-column-offset(1.5);
+       @include make-md-column(7);
+       @include make-md-column-offset(2.5);
+       @include make-lg-column(6);
+       @include make-lg-column-offset(0);
+       position: relative;
+       margin-bottom: 35px;
+       padding: 25px 18px;
+       max-width: 550px;
+       height: 375px;
+       border: 1px solid $color-pink;
+       border-radius: 10px;
+       @media screen and (max-width: 1199px) {
+         height: 385px;
+       }
+       @media screen and (max-width: 767px) {
+         float: none;
+         margin: 0 auto 35px auto;
+         padding: 15px;
+         padding-right: 5px;
+         height: auto;
+       }
+
+       .views-field {
+
+         span {
+           font-weight: 400;
+           color: #09870a;
+           font-size: 19px;
+         }
+
+         .field-content {
+           line-height: 1.3;
+         }
+       }
+
+       .views-field-title {
+         margin-bottom: 10px;
+         width: 80%;
+         @media screen and (max-width: 767px) {
+           float: left;
+           width: 75%;
+         }
+         @media screen and (max-width: 470px) {
+           width: 70%;
+         }
+         @media screen and (max-width: 410px) {
+           width: 65%;
+         }
+         @media screen and (max-width: 360px) {
+           width: 60%;
+         }
+
+         a {
+           font-size: 21px;
+           color: #09870a;
+           @media screen and (max-width: 420px) {
+             font-size: 19px;
+           }
+
+           &:hover {
+             color: $color-pink;
+           }
+         }
+       }
+
+       .views-field-field-object {
+         @include clearfix();
+         margin-bottom: 15px;
+         width: 80%;
+         @media screen and (max-width: 767px) {
+           float: left;
+           width: 78%;
+         }
+         @media screen and (max-width: 540px) {
+           width: 75%;
+         }
+         @media screen and (max-width: 430px) {
+           width: 65%;
+         }
+         @media screen and (max-width: 360px) {
+           width: 60%;
+         }
+
+         .views-label {
+           float: left;
+           margin-right: 8px;
+           @media screen and (max-width: 767px) {
+             float: none;
+             margin-right: 0;
+           }
+         }
+
+         .field-content {
+           padding-top: 3px;
+           text-shadow: 0.1px 0 $color-text;
+         }
+       }
+
+       .views-field-field-image {
+         @media screen and (min-width: 768px) {
+           position: absolute;
+           top: 15px;
+           right: 20px;
+         }
+         @media screen and (max-width: 425px) {
+           @include clearfix;
+         }
+       }
+
+       .views-field-field-situation {
+         margin-bottom: 10px;
+         padding-right: 80px;
+         @media screen and (max-width: 425px) {
+           padding-right: 0;
+         }
+
+         .field-content {
+           text-shadow: 0.1px 0 $color-text;
+         }
+       }
+
+       .views-field-view-node {
+         text-align: center;
+         @media screen and (min-width: 768px) {
+           position: absolute;
+           bottom: 20px;
+           right: 50%;
+           margin-right: -102px;
+         }
+         @media screen and (max-width: 767px) {
+           margin-top: 30px;
+         }
+
+         .field-content {
+           padding: 2px 12px 3px 6px;
+           background: #09870a;
+           border-radius: 5px;
+
+           &:hover {
+             background: darken(#09870a, 3%);
+           }
+
+           a {
+             padding-left: 25px;
+             font-weight: 300;
+             color: white;
+             background: url("../img/leaf-white.png") no-repeat 0 3px;
+
+             &:hover {
+               text-decoration: none;
+             }
+
+             &:focus{
+               text-decoration: none;
+             }
+           }
+         }
+       }
+     }
+   }
+ }
+
+  .pager-load-more{
+
+    a{
+      &:before{
+        left: -11%;
+      }
+      &:after{
+        right: -11%;
+      }
+    }
+  }
+
+  .pane-views-clients-my-client{
+
+    .pane-title{
+      @extend h1;
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    .view-clients{
+      margin-top: -25px;
+    }
+  }
+
+  .jcarousel-skin-default .jcarousel-container{
+    padding: 20px 35px;
+    height: 145px;
+
+    .jcarousel-item{
+      margin: 0;
+      width: 110px;
+      height: 110px;
+      border: none;
+
+      .field-content{
+        line-height: 110px;
+
+        .img-responsive{
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .footer-links {
+    margin-top: 50px;
+    margin-bottom: 95px;
+    text-align: center;
+
+    p {
+      font-size: 19px;
+      color: $color-h;
+      @media screen and (max-width: 470px) {
+        font-size: 16px;
+      }
+    }
+
+    a {
+      font-size: 24px;
+      font-weight: 300;
+      color: $color-pink;
+      border-bottom: 1px solid $color-pink;
+      text-decoration: none;
+      @media screen and (max-width: 470px) {
+        font-size: 21px;
+      }
+      @media screen and (max-width: 390px) {
+        display: block;
+        max-width: 150px;
+      }
+
+      &:hover {
+        text-decoration: none;
+        border: none;
+      }
+
+      &:first-child {
+        margin-right: 15px;
+        @media screen and (max-width: 390px) {
+          margin: 0 auto;
+        }
+      }
+
+      &:last-child {
+        margin-left: 15px;
+        @media screen and (max-width: 390px) {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  //link for edit my-clients
+  .panel-col-content{
+
+    .pane-1{
+      text-align: center;
+    }
+  }
+}
+
+ //link for edit my-clients
+ .page-cases.not-logged-in{
+
+   .panel-col-content{
+
+     .pane-1{
+      display: none;
+     }
+   }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,149 @@
+.page-node-92{
+
+    h1{
+      text-align: center;
+      margin-top: 54px;
+      margin-bottom: 30px;
+    }
+
+  .pane-page-content{
+      padding-left: 60px;
+      padding-right: 25px;
+      @media screen and (max-width: 767px){
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+    h2{
+      font-family: $font-title;
+      font-size: 64px;
+      color: $color-h;
+      text-align: center;
+      @media screen and (max-width: 767px){
+        font-size: 56px;
+      }
+    }
+
+    h3{
+      margin-top: 30px;
+      margin-bottom: 13px;
+      font-size: 19px;
+      color: $color-h;
+    }
+
+    p{
+      text-shadow: 0.1px 0 black;
+
+      em{
+        font-weight: 300;
+      }
+    }
+
+    //text top
+    #node-92 p{
+      margin-bottom: 25px;
+    }
+
+    //Block photo
+    #node-93 {
+
+      .field-type-download-link {
+        margin-bottom: 15px;
+
+        a {
+          color: $color-pink;
+          font-size: 19px;
+          font-weight: 400;
+          @media screen and (max-width: 399px) {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .field-type-image {
+        margin-bottom: 5px;
+
+        .field-items {
+          @include make-row();
+          @media screen and (max-width: 767px){
+            padding-left: 15px;
+          }
+
+          .field-item {
+            @include make-xs-column(6);
+            @include make-sm-column(3);
+            @include make-lg-column(2);
+            //@include box-shadow(2px 2px 10px 0 #f2ece9, -2px -2px 10px 0 #f2ece9);
+            margin-bottom: 7px;
+            margin-right: 10px;
+            padding-left: 0;
+            padding-right: 0;
+            //padding-top: 10px;
+            max-width: 165px;
+            @media screen and (min-width: 1200px){
+              &:nth-child(6), &:last-child{
+                margin-right: 0;
+              }
+            }
+            @media screen and (min-width: 768px) and (max-width: 991px){
+              width: 23%!important;
+            }
+            @media screen and (max-width: 379px) {
+              margin-left: 20%;
+              width: 100%!important;
+            }
+
+            //&:nth-child(6), &:last-child{
+            //  background-image: linear-gradient(360deg, #ede5de, #e7ded5, #f4efe9);
+            //}
+            //
+            //&:nth-child(4), &:nth-child(5), &:nth-child(10), &:nth-child(11){
+            //  background-image: linear-gradient(90deg, #ede8e4, #f8f4f1, #f6f3ee);
+            //  box-shadow: none;
+            //}
+            //
+            //&:nth-child(2), &:nth-child(3), &:nth-child(8), &:nth-child(9){
+            //  background-image: linear-gradient(180deg, #ece8e6, #f1edeb),
+            //    linear-gradient(90deg, #dad2cf, #e8e3df, #edebe9);
+            //
+            //}
+            //
+            //&:first-child, &:nth-child(7){
+            //  background-image: linear-gradient(135deg, #e2d9d2, #f2ece9, #f4efeb);
+            //}
+
+            img {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+
+    //Content
+    #node-94{
+
+      ul{
+        margin-bottom: 45px;
+        padding-left: 0;
+
+        li{
+          margin-bottom: 15px;
+          padding-left: 18px;
+          background-image: url("../img/leaf-smi.png");
+          text-shadow: 0.1px 0 black;
+        }
+      }
+
+      .field-type-text-with-summary {
+        margin-bottom: 80px;
+
+        p:last-child {
+          font-size: 16px;
+          color: $color-h;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

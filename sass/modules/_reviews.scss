@@ -1,0 +1,297 @@
+.page-node-30{
+
+  .pane-node-title{
+    text-align: center;
+
+    h1{
+      margin-bottom: 50px;
+    }
+  }
+
+  .pane-views-results-results {
+
+    .views-exposed-widgets{
+      margin-left: -15px;
+      margin-right: -15px;
+      margin-bottom: 50px;
+    }
+
+    #edit-id-wrapper {
+      padding-left: 60px;
+      width: 100%;
+      @media screen and (max-width: 767px) {
+        padding-left: 0;
+        text-align: center;
+
+        .views-widget{
+          padding: 10px 0;
+          border-top: 1px solid $color-pink;
+          border-bottom: 1px solid $color-pink;
+        }
+      }
+
+      label {
+        float: left;
+        font-size: 19px;
+        font-weight: 300;
+        color: #939393;
+        @media screen and (max-width: 991px) {
+          font-size: 18px;
+        }
+        @media screen and (max-width: 767px) {
+          float: none;
+          font-size: 19px;
+        }
+
+      }
+
+      .form-type-bef-link {
+        display: inline-block;
+        padding: 0 15px;
+        @media screen and (max-width: 767px) {
+          display: block;
+          margin-bottom: 15px;
+        }
+
+        a {
+          font-size: 19px;
+          color: #0eac0f;
+          line-height: 1.2;
+          @media screen and (max-width: 991px) {
+            font-size: 16px;
+          }
+          @media screen and (max-width: 767px) {
+            padding: 0 15px;
+            font-size: 19px;
+          }
+
+          &:hover{
+            color: $color-pink;
+          }
+
+          &.active {
+            padding-left: 25px;
+            font-size: 24px;
+            font-weight: 400;
+            color: $color-h;
+            line-height: 1;
+            text-decoration: none;
+            background: url("../img/leaf-contacts.png") no-repeat 0 5px;
+            @media screen and (max-width: 991px) {
+              font-size: 19px;
+            }
+            @media screen and (max-width: 767px) {
+              font-size: 21px;
+            }
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+
+        &:not(.form-item-edit-id-14) {
+          border-right: 1px solid $color-pink;
+          @media screen and (max-width: 767px) {
+            border: none;
+          }
+        }
+      }
+
+      .form-item-edit-id-all {
+        padding-left: 10px;
+      }
+    }
+
+    .views-row {
+      @include make-row();
+      @media screen and (max-width: 767px){
+        padding: 15px;
+        border-bottom: 1px solid $color-pink;
+      }
+
+      .views-field-field-single-img {
+        @include make-sm-column(2.5);
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 20px;
+        max-width: 230px;
+        @media screen and (max-width: 991px) {
+          padding-top: 0;
+        }
+        @media screen and (max-width: 767px){
+          margin-bottom: 15px;
+        }
+
+        img {
+          @include center-block();
+          @media screen and (max-width: 767px){
+            margin-left: 0;
+          }
+        }
+      }
+
+      .views-field-body {
+        @include make-sm-column(7.5);
+        @media screen and (max-width: 767px){
+          margin-bottom: 15px;
+        }
+
+        .title {
+          margin-bottom: 10px;
+          font-size: 24px;
+          color: $color-pink;
+
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .views-field-field-letter {
+        @include make-sm-column(2);
+
+        a{
+          outline: none;
+        }
+      }
+
+      &:not(.views-row-last) {
+        margin-bottom: 90px;
+        @media screen and (max-width: 767px){
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .pane-node-body{
+    margin: 50px auto 30px auto;
+    max-width: 730px;
+
+    p{
+      &:first-of-type {
+        margin-bottom: 22px;
+        font-size: 21px;
+        color: $color-h;
+      }
+
+      &:last-of-type{
+        font-size: 19px;
+      }
+    }
+
+    ul{
+      margin-bottom: 40px;
+      padding-left: 0;
+
+      li {
+        padding-left: 0;
+        padding-bottom: 15px;
+        font-size: 19px;
+        background: none;
+
+        em{
+          font-style: normal;
+          font-weight: 400;
+          color: $color-pink;
+        }
+      }
+    }
+  }
+
+  .pager-load-more{
+
+    a{
+      &:before{
+        left: -13%;
+      }
+      &:after{
+        right: -13%;
+      }
+    }
+  }
+
+  .consultation{
+    margin: 0 auto 42px auto;
+    padding-top: 26px;
+    max-width: 387px;
+    height: 81px;
+    text-align: center;
+    background: url("../img/button-front.png") no-repeat;
+    @media screen and (max-width: 767px) {
+      max-width: 306px;
+      background: url("../img/btn-programs.png") no-repeat;
+    }
+    @media screen and (max-width: 340px){
+      margin-left: -15px;
+    }
+
+    a{
+      font-size: 21px;
+      font-weight: 400;
+      color: white;
+      text-decoration: none;
+      @media screen and (max-width: 767px) {
+        font-size: 17px;
+        font-weight: 300;
+      }
+
+      &:visited{
+        text-decoration: none;
+      }
+
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

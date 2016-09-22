@@ -1,0 +1,288 @@
+.node-type-programs{
+
+  #edit-tid-wrapper{
+
+    label{
+      display: none;
+    }
+  }
+
+  .pane-node-content{
+    margin: 0 auto;
+    max-width: 750px;
+
+    .pane-title{
+      margin: 30px auto 10px auto;
+      padding-bottom: 12px;
+      font-family: $base-font;
+      font-size: 27px;
+      text-align: center;
+      border-bottom: 1px solid $color-pink;
+      @media screen and (max-width: 375px) {
+        font-size: 24px;
+      }
+    }
+
+    .field{
+      margin-bottom: 22px;
+
+      &:last-child{
+        margin-bottom: 35px;
+      }
+
+      .field-label{
+        font-size: 19px;
+        font-weight: 400;
+        color: $color-h;
+      }
+
+      ul{
+        padding-left: 20px;
+        min-height: 45px;
+        @media screen and (max-width: 425px) {
+          padding-left: 0;
+        }
+
+        li{
+          padding-left: 15px;
+          background: url("../img/leaf-program-s.png") no-repeat 0 4px;
+        }
+      }
+    }
+
+    .field-type-text-long, .field-type-text{
+      padding-left: 75px;
+
+      .field-item{
+        line-height: 1.3;
+
+        ul{
+          li{
+            line-height: 1.2; 
+          }
+        }
+      }
+    }
+
+    .field-label-inline{
+
+      .field-label{
+        height: 23px;
+      }
+
+      .field-items{
+        float: none;
+
+        .field-item{
+          padding-top: 4px;
+        }
+      }
+    }
+
+    .field-type-image{
+
+      img{
+        margin: 0 auto;
+      }
+    }
+
+    .field-name-field-tasks{
+      padding-left: 0;
+      @media screen and (max-width: 767px) {
+        background-position: 15px 0;
+      }
+
+      .field-label {
+        margin-bottom: 10px;
+        padding-left: 75px;
+      }
+
+      .field-items {
+        padding-left: 75px;
+        background: url("../img/target.png") no-repeat 15px 31%;
+      }
+    }
+
+    .field-name-field-situation{
+      background: url("../img/features.png") no-repeat 15px;
+      @media screen and (max-width: 342px) {
+
+        .field-label{
+          height: 48px;
+          line-height: 1.3;
+        }
+      }
+
+      .field-items ul{
+        padding-top: 30px;
+      }
+    }
+
+    .field-name-field-solution{
+      background: url("../img/methods.png") no-repeat 15px;
+    }
+
+    .field-name-field-duration{
+      padding-top: 5px;
+      min-height: 38px;
+      background: url("../img/duration.png") no-repeat 15px;
+      @media screen and (max-width: 409px) {
+
+        .field-label{
+          height: 48px;
+          line-height: 1.3;
+        }
+      }
+    }
+
+    .field-name-field-designed-for{
+      padding-top: 15px;
+      min-height: 55px;
+      background: url("../img/for-whom.png") no-repeat 5px;
+    }
+
+    //Program
+    .field-type-text-with-summary{
+
+      .field-label{
+        font-family: $font-title;
+        font-size: 64px;
+        font-weight: 300;
+        color: $color-h;
+        text-align: center;
+        @media screen and (max-width: 767px) {
+          padding-left: 0;
+        }
+      }
+
+      .field-item{
+
+        p {
+          padding-left: 15px;
+          font-size: 19px;
+          font-weight: 400;
+          color: $color-h;
+          line-height: 1.3;
+          @media screen and (max-width: 375px) {
+            font-size: 17px;
+          }
+
+          strong:first-child{
+            margin-left: -15px;
+            @media screen and (max-width: 768px){
+              margin-left: -5px;
+            }
+          }
+        }
+
+        ul{
+          margin-bottom: 40px;
+          padding-left: 10px!important;
+
+          &:nth-of-type(2n){
+
+            li{
+              background: url("../img/top-right-s.png") no-repeat 0 4px;
+            }
+          }
+          li {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .pane-views-program-clent-block{
+    margin: 0 auto;
+    max-width: 730px;
+    max-height: 160px;
+    @media screen and (max-width: 767px){
+      max-height: 200px;
+    }
+
+    h2{
+      margin-top: 0;
+      font-size: 19px;
+      color: $color-h;
+    }
+
+    .jcarousel-skin-default .jcarousel-next, .jcarousel-skin-default .jcarousel-prev{
+      background-image: url("../img/arrows.png");
+    }
+
+    .jcarousel-container{
+      padding: 20px 10px!important;
+      width: 100%!important;
+      height: auto!important;
+      @media screen and (min-width: 768px){
+        margin-left: -20px;
+      }
+      @media screen and (min-width: 991px){
+        margin-left: -60px;
+      }
+
+      .jcarousel-clip{
+        margin: 0 auto;
+      }
+
+      .jcarousel-next{
+        @media screen and (min-width: 360px) and (max-width: 767px){
+          right: -10px;
+        }
+      }
+
+      .jcarousel-prev{
+        @media screen and (min-width: 360px) and (max-width: 767px){
+          left: -10px;
+        }
+      }
+    }
+
+    .jcarousel img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto !important;
+    }
+
+    .jcarousel-item{
+      display: table;
+      width: 150px;
+      border: none;
+
+      .views-field{
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  //View more
+  .node-panel-pane{
+    margin: 0 auto;
+    max-width: 730px;
+
+    a{
+      color: $color-pink;
+    }
+
+    p:first-child{
+      margin-bottom: 40px;
+    }
+  }
+
+  .pane-views-programs-more-link{
+    margin-bottom: 80px;
+    text-align: center;
+    @media screen and (min-width: 768px){
+      padding-right: 40px;
+    }
+
+    a{
+      font-size: 19px;
+      font-weight: 400;
+      color: $color-pink;
+    }
+  }
+}

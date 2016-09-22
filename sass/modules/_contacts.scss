@@ -1,0 +1,374 @@
+.page-node-7{
+
+  .pane-page-content {
+    @include make-row();
+
+    .pane-node-title {
+      max-width: 585px;
+      float: right;
+      @media screen and (max-width: 1199px){
+        max-width: 410px;
+      }
+      @media screen and (max-width: 991px){
+        max-width: 750px;
+        width: 100%;
+      }
+
+      h1 {
+        margin-top: 60px;
+        padding-right: 15px;
+        text-align: right;
+        color: #079208;
+        @media screen and (max-width: 1199px){
+          font-size: 43px;
+        }
+        @media screen and (max-width: 991px){
+          padding-right: 0;
+          text-align: center;
+          font-size: 64px;
+        }
+        @media screen and (max-width: 767px){
+          font-size: 54px;
+        }
+      }
+    }
+
+    .nataliya-photo{
+      @include make-sm-column(12);
+      @include make-md-column(7);
+      @include make-lg-column(6);
+      margin-top: 50px;
+      max-height: 1120px;
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+
+      p:last-child {
+        -webkit-transform: translate(25px, -200px);
+        -moz-transform: translate(25px, -200px);
+        -ms-transform: translate(25px, -200px);
+        -o-transform: translate(25px, -200px);
+        transform: translate(25px, -200px);
+      }
+
+
+      p:first-child{
+        padding-top: 20px;
+        max-width: 235px;
+        height: 140px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 19px;
+        font-weight: 300;
+        font-style: italic;
+        text-align: center;
+        text-shadow: 0.1px 0 black;
+        line-height: 1.3;
+        border: 1px solid rgba(7, 146, 8, 0.7);
+        border-radius: 50%;
+        -webkit-transform: translateY( -40px);
+        -moz-transform: translateY( -40px);
+        -ms-transform: translateY( -40px);
+        -o-transform: translateY( -40px);
+        transform: translateY( -40px);
+
+        em{
+          font-size: 22px;
+        }
+      }
+
+      .circle{
+        border: 1px solid rgba(7, 146, 8, 0.7);
+        border-radius: 50%;
+      }
+
+      .small{
+        width: 50px;
+        height: 30px;
+        -webkit-transform: translate(209px, -80px);
+        -moz-transform: translate(209px, -80px);
+        -ms-transform: translate(209px, -80px);
+        -o-transform: translate(209px, -80px);
+        transform: translate(209px, -80px);
+      }
+
+      .smaller{
+        width: 34px;
+        height: 21px;
+        -webkit-transform: translate(252px, -83px);
+        -moz-transform: translate(252px, -83px);
+        -ms-transform: translate(252px, -83px);
+        -o-transform: translate(252px, -83px);
+        transform: translate(252px, -83px);
+      }
+    }
+
+    .pane-node-content {
+      @include make-xs-column(12);
+      @include make-sm-column(12);
+      @include make-md-column(5);
+      @include make-lg-column(6);
+      padding-left: 10px;
+      padding-right: 0;
+      @media screen and (max-width: 767px){
+        padding: 0 15px;
+      }
+
+      .contacts {
+        text-align: left;
+
+        h3 {
+          margin-top: 25px;
+          margin-bottom: 15px;
+          color: #414141;
+        }
+
+        p {
+          color: #6a6869;
+          line-height: 1.3;
+
+          a {
+            font-size: 19px;
+            color: $color-pink;
+
+            &:hover{
+              color: $color-pink;
+
+              strong{
+                color: $color-pink;
+              }
+            }
+
+            strong{
+              font-size: 16px;
+            }
+          }
+
+          em {
+            font-weight: 300;
+          }
+        }
+
+        .consult {
+          margin-right: 40px;
+          padding-top: 16px;
+          @media screen and (max-width: 991px){
+            margin-right: 0;
+          }
+
+          p {
+            font-size: 19px;
+            text-shadow: 0.1px 0 $color-h;
+            color: $color-h;
+            em {
+              text-shadow: 0.1px 0 $color-pink;
+            }
+          }
+        }
+
+        ul {
+          margin-top: 30px;
+          margin-bottom: 35px;
+          padding-left: 0;
+
+          li {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            background: url("../img/leaf-contacts.png") no-repeat 0 5px;
+            font-size: 13px;
+            color: #6a6869;
+
+            strong {
+              margin-right: 5px;
+              font-size: 19px;
+              font-weight: 500;
+              color: #079208;
+            }
+            em, em a {
+              margin-right: 5px;
+              font-size: 19px;
+              font-style: normal;
+              font-weight: 500;
+              color: $color-pink;
+            }
+          }
+        }
+      }
+    }
+
+    // Frorm
+
+    .contact-form{
+      @include make-xs-column(12);
+      @include make-sm-column(12);
+      @include make-md-column(5);
+      @include make-lg-column(6);
+      padding: 0 5px;
+      @media screen and (max-width: 767px){
+        padding: 0 15px;
+      }
+
+      .pane-title {
+        margin-top: 25px;
+        font-size: 24px;
+        color: #048005;
+      }
+
+      .form-item{
+        margin-bottom: 5px;
+      }
+
+      .form-control{
+        border-radius: 0;
+      }
+
+      label{
+        margin-bottom: 2px;
+        padding-left: 2px;
+        font-family: $base-font;
+        font-size: 16px;
+        font-weight: 300;
+        color: #525352;
+      }
+
+      input:focus{
+        border-color: lighten(#00A100, 10%);
+      }
+
+      .webform-component--name{
+        float:left;
+        max-width: 282px;
+        margin-right: 10px;
+        @media screen and (max-width: 1199px){
+          max-width: 395px;
+          margin-right: 0;
+        }
+        @media screen and (max-width: 991px){
+          max-width: 365px;
+          margin-right: 10px;
+        }
+        @media screen and (max-width: 767px){
+          margin-right: 0;
+          width: 50%;
+          padding-right: 10px;
+        }
+        @media screen and (max-width: 425px){
+          margin-right: 0;
+          max-width: 395px;
+          width: 100%;
+          padding-right: 0;
+        }
+      }
+
+      .webform-component--e-mail{
+        @extend .webform-component--name;
+        margin-right: 0;
+        @media screen and (max-width: 767px){
+          padding-right: 0;
+        }
+      }
+
+      .resizable-textarea textarea{
+        min-height: 135px;
+        border-radius: 0;
+        &:focus{
+          border-color: lighten(#00A100, 10%);
+        }
+      }
+
+      .form-actions {
+        margin: 0 auto;
+        max-width: 214px;
+        height: 83px;
+
+        button {
+          margin-top: 8px;
+          width: 100%;
+          height:100%;
+          font-family: $base-font;
+          font-size: 21px;
+          font-weight: 300;
+          color: white;
+          background: url("../img/button.png") no-repeat;
+          border: none;
+          outline: none;
+
+          &:hover{
+            color: darken(white, 10%);
+          }
+
+          &:active{
+            margin-top: 7px;
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+
+    .colorful-life{
+      @include make-xs-column(12);
+      @include make-sm-column(12);
+      @include make-lg-column(6);
+      margin-bottom: 70px;
+      padding: 0 10px;
+      text-align: center;
+
+      .pane-title{
+        margin-top: 10px;
+        font-family: $font-title;
+        font-size: 64px;
+        color: $color-pink;
+        @media screen and (max-width: 767px){
+         font-size: 54px;
+        }
+      }
+
+//Mass-media link
+      #node-8 {
+        margin-top: 50px;
+
+        a {
+          font-family: $base-font;
+          font-size: 19px;
+          font-weight: 300;
+          color: #016e02;
+          //text-shadow: 0.1px 0 #016e02;
+          text-decoration: underline;
+
+          &:hover{
+            color: $color-pink;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

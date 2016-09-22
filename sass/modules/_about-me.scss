@@ -1,0 +1,418 @@
+.page-node-9 {
+
+  .pane-pane-messages{
+    @include make-row();
+  }
+
+  .pane-page-content {
+    @include make-row();
+    padding-top: 35px;
+    @media screen and (max-width: 767px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    & > .pane-content{
+      position: relative;
+    }
+
+    .pane-node-content{
+      @include make-sm-column(6);
+      @include make-sm-column-offset(6);
+      @include make-md-column(7);
+      @include make-md-column-offset(5);
+      @include make-lg-column(7.5);
+      @include make-lg-column-offset(4.5);
+      padding-right: 5px;
+    }
+
+    .pane-node-title {
+      float: right;
+      max-width: 723px;
+      width: 100%;
+      @media screen and (max-width: 1199px){
+        max-width: 560px;
+      }
+      @media screen and (max-width: 991px) {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      h1 {
+        margin-left: -10px;
+        color: #048805;
+        @media screen and (max-width: 1199px){
+         font-size: 58px;
+        }
+      }
+    }
+
+    .pane-node-content{
+      padding-left: 5px;
+
+      h2{
+        margin-bottom: 18px;
+        font-size: 24px;
+        color: $color-page9;
+        &:nth-of-type(2){
+          margin-top: 33px;
+        }
+      }
+
+      p{
+        margin-bottom: 20px;
+        font-weight: 400;
+        color: #3c3c3c;
+        line-height: 1.3;
+
+        a{
+          font-size: 16px;
+          color: $color-page9;
+          //text-shadow: 0.5px 0 $color-page9;
+        }
+
+        strong{
+          font-size: 16px;
+          //text-shadow: 0.1px 0 $color-h;
+        }
+      }
+
+      ul{
+        padding-left: 15px;
+
+        li{
+          @extend p;
+          margin-bottom: 20px;
+          font-size: 16px;
+        }
+      }
+
+      .program {
+
+        p {
+          margin-top: 40px;
+          font-size: 19px;
+        }
+
+        a{
+          font-size: 19px;
+        }
+      }
+
+      .clients{
+        margin-top: 50px;
+        @media screen and (max-width: 991px){
+
+          &>h2{
+            text-align: center;
+          }
+        }
+
+        h2 {
+          color: #087409;
+        }
+
+        .logos {
+          margin-top: 36px;
+          @media screen and (max-width: 991px) {
+
+           &>p{
+             text-align: center;
+             @media screen and (max-width: 620px){
+               margin: 0 auto;
+               max-width: 300px;
+             }
+           }
+          }
+
+          .about-me h2{
+            font-size: 19px;
+          }
+
+          img{
+            @media screen and (max-width: 991px){
+              margin-bottom: 20px;
+            }
+
+            &:first-child {
+              margin-left: 13px;
+              @media screen and (max-width: 1199px){
+                margin-left: 0;
+              }
+            }
+
+            &:not(:last-child) {
+              margin-right: 30px;
+              @media screen and (max-width: 1199px){
+                margin-right: 16px;
+              }
+              @media screen and (max-width: 991px){
+                margin-right: 35px;
+              }
+              @media screen and (max-width: 767px){
+                margin-right: 15px;
+              }
+              @media screen and (max-width: 615px){
+
+              }
+            }
+
+            &:nth-child(3){
+              @media screen and (min-width: 767px) and (max-width: 991px) {
+                margin-right: 0;
+              }
+            }
+          }
+
+          //Education fieldset
+          fieldset {
+            margin-top: 50px;
+            margin-bottom: 40px;
+            border-color: $color-h;
+
+            .panel-heading {
+              margin-top: -20px;
+              line-height: 0.5em;
+              background: white;
+              border-color: transparent;
+              background: url("../img/triangle-top.png") no-repeat 96% 20px;
+
+              a.panel-title {
+                font-size: 24px;
+                font-weight: 400;
+                color: $color-page9;
+                text-decoration: none;
+
+                &:after{
+                  content: ":";
+                }
+              }
+            }
+
+            &.collapsed {
+              border-color: $color-h;
+              border-radius: 0;
+
+              .panel-heading {
+                border-color: $color-h;
+                background: url("../img/triangle.png") no-repeat 96% 20px,
+                            url("../img/education.png") no-repeat 65% 19px;
+
+                @media screen and (max-width: 991px){
+                  background: url("../img/triangle.png") no-repeat 96% 20px;
+                }
+
+                a{
+                  padding-left: 20px;
+
+                  &:after{
+                    content: "+";
+                    padding-left: 5px;
+                  }
+
+                  &.collapsed:after{
+                    content: "+";
+                    padding-left: 5px;
+                  }
+                }
+              }
+            }
+          }
+            .collapse {
+
+              .panel-body{
+                padding-top: 0;
+              }
+
+              h2 {
+                margin-top: 33px;
+                font-size: 24px;
+                color: $color-page9;
+              }
+
+              p {
+                strong {
+                  font-size: 19px;
+                }
+              }
+            }
+
+          h2 {
+            font-size: 21px;
+            color: #2a7c2b;
+          }
+
+          ul {
+            padding-left: 0;
+            margin-left: -3px;
+
+            li {
+              margin-bottom: 15px;
+              &:last-child{
+                margin-bottom: 10px;
+              }
+
+              strong {
+                font-size: 16px;
+                color: #048805;
+              }
+              em {
+                //text-shadow: 0.1px 0 $color-pink;
+              }
+            }
+          }
+
+          .my-command {
+            margin-bottom: 46px;
+            padding-left: 25px;
+            @media screen and (max-width: 400px){
+              padding-left: 0;
+            }
+
+            a {
+              position: relative;
+              font-size: 21px;
+              color: $color-page9;
+              &:after {
+                content: "";
+                position: absolute;
+                top: 6px;
+                right: -22px;
+                width: 15px;
+                height: 16px;
+                background: url("../img/my-command.png") no-repeat;
+              }
+              @media screen and (max-width: 320px){
+                font-size: 19px;
+                &:after{
+                  top: 5px;
+                }
+              }
+            }
+          }
+
+          p {
+            color: black;
+            strong {
+              font-size: 16px;
+              color: #048805;
+            }
+            em{
+              //text-shadow: 0.1px 0 $color-pink;
+            }
+          }
+
+          .yet h2{
+            color: $color-page9;
+          }
+
+          .call-to-action{
+            @include box-shadow(0.2px 0.2px 2px 0 $color-page9, -0.2px -0.2px 2px 0 $color-page9);
+            margin-top: 35px;
+            margin-bottom: 45px;
+            padding: 16px 10px;
+            border: 1px solid #d21e80;
+            border-radius: 10px;
+
+            p strong:first-child{
+              color: $color-h;
+            }
+
+            p:last-child{
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//PHOTO POSITION AT FIRST
+.page-node-9{
+
+  .nataliya-photo{
+    position: absolute;
+    top: 0;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+//PHOTO POSITION FOR ANONYM WHEN ADD CLASSES
+.page-node-9.top{
+
+  .nataliya-photo{
+    //@include translateY(-75px);
+    position: fixed;
+    top: 50px;
+  }
+}
+
+  .page-node-9.bottom{
+
+    .nataliya-photo{
+      position: absolute;
+      top: 49%;
+    }
+  }
+
+    //Photo position for collapsed fieldset
+    .page-node-9.open.bottom{
+
+      .nataliya-photo{
+        top: 62%;
+      }
+    }
+
+//PHOTO POSITION FOR LOGGED-IN WHEN ADD CLASSES
+.page-node-9.logged-in.top{
+
+  .nataliya-photo{
+    @include translateY(125px);
+    top: 0;
+    //top: 195px;
+  }
+}
+
+  .page-node-9.logged-in.bottom{
+
+    .nataliya-photo{
+      top: 44%;
+    }
+  }
+
+    //Photo position for collapsed fieldset
+    .page-node-9.logged-in.open.bottom{
+
+      .nataliya-photo{
+        @include translateY(0);
+        top: 62%;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

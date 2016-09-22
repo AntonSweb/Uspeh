@@ -1,22 +1,30 @@
-
-.panel-pane{
-  @extend .container;
-}
-
-.pane-pane-messages{
-  padding-left: 30px;
+body{
+  font-family: $base-font;
+  font-size: 16px;
+  font-weight: 300;
+  color: $color-text;
 }
 
 h1{
   font-family: $font-title;
+  font-size: 64px;
   color: $color-h;
+  @media screen and (max-width: 767px){
+    font-size: 56px;
+  }
 }
 
 h2{
   font-family: $base-font;
   font-size: 27px;
   font-weight: 400;
-  color: $color-h;
+}
+
+.not-front {
+
+  .panel-col-content {
+    @extend .container;
+  }
 }
 
 .pane-page-content {
@@ -26,27 +34,13 @@ h2{
 
     li {
       font-family: $base-font;
-      font-size: 19px;
-      font-weight: 300;
-    }
-
-    a {
-      color: $color-text;
-      &:hover{
-        color: lighten(#303130, 15%);
-      }
     }
   }
 
   p{
-    font-family: $base-font;
-    font-size: 16px;
-    font-weight: 300;
-    color: $color-text;
 
     em{
       font-style: normal;
-      font-weight: 400;
       color: $color-pink;
     }
 
@@ -55,7 +49,61 @@ h2{
       font-weight: 400;
     }
   }
+
+  a{
+    font-family: $base-font;
+
+    &:hover{
+      color: $color-pink;
+    }
+
+    &:focus{
+      outline: none;
+      color: $color-pink;
+    }
+  }
+
+  .pane-node-content a{
+    color: $color-pink;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: underline;
+
+    &:hover{
+      text-decoration: none;
+    }
+
+    strong{
+      color: $color-pink;
+    }
+  }
+
+  u{
+    text-decoration: none!important;
+
+    &:hover{
+      color: $color-pink;
+    }
+  }
 }
+
+.field-name-body{
+
+  ul li{
+    padding-left: 25px;
+    background: url("../img/leaf-small.png") no-repeat 0 5px;
+  }
+}
+
+.views-field-field-img, .field-name-field-img{
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+
+
 
 
 

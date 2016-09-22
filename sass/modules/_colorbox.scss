@@ -1,0 +1,19 @@
+
+a.colorbox{
+  outline: none;
+}
+
+#colorbox{
+
+  #cboxWrapper{
+    background: black;
+
+    #cboxContent{
+      background: black;
+
+      #cboxPrevious, #cboxNext, #cboxClose{
+        border-radius: 50%;
+      }
+    }
+  }
+}

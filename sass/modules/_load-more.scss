@@ -1,0 +1,59 @@
+//.not-front:not(.page-training-gallery) {
+
+.page-programs, .page-cases, .page-node-30, .node-type-blog {
+
+  .pager{
+    margin: 35px 0;
+  }
+
+  .pager-load-more, .form-actions {
+
+
+    a, button {
+      position: relative;
+      color: lighten($color-h, 5%);
+      border: 1px solid lighten($color-h, 5%);
+      border-radius: 5px;
+      background: transparent;
+      @include box-shadow(inset 0.1px 0.1px 1px 0 lighten($color-h, 10%),
+        inset -0.1px -0.1px 1px 0 lighten($color-h, 10%));
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -50%;
+        width: 29px;
+        height: 28px;
+        background: url("../img/load-more-bottom.png") no-repeat;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        width: 22px;
+        height: 30px;
+        background: url("../img/load-more-top.png") no-repeat;
+      }
+
+      &:hover {
+        @include transition(background 0.5s ease-in-out);
+        @include box-shadow(inset 1px 1px 0 0 lighten($color-h, 10%),
+          inset -1px -1px 0 0 lighten($color-h, 10%));
+        background: transparent;
+      }
+
+      &:active {
+        @include box-shadow(inset 0.1px 0.1px 1px 0 lighten($color-h, 10%),
+          inset -0.1px -0.1px 1px 0 lighten($color-h, 10%));
+        background: transparent;
+      }
+
+      &:focus {
+        @include box-shadow(inset 0.1px 0.1px 1px 0 lighten($color-h, 10%),
+          inset -0.1px -0.1px 1px 0 lighten($color-h, 10%));
+        background: transparent;
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+.page-blog{
+
+  .pane-page-title{
+    @include make-sm-column(12);
+    @include make-md-column(7);
+    @include make-lg-column(8);
+    max-width: 760px;
+    text-align: right;
+    @media screen and (max-width: 991px) {
+      text-align: center;
+    }
+
+    h1{
+      margin-bottom: 35px;
+      font-size: 64px;
+      color: $color-h;
+    }
+  }
+
+  .nataliya-photo{
+    @include make-sm-column(7);
+    @include make-md-column(5);
+    @include make-lg-column(4);
+    margin-top: -96px;
+    margin-left: -15px;
+    margin-bottom: 110px;
+    @media screen and (max-width: 991px) {
+      margin-top: 1px;
+      margin-left: -27px;
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .pane-page-content{
+    @include make-sm-column(5);
+    @include make-md-column(7);
+    @include make-lg-column(8);
+    max-width: 760px;
+
+    .views-row{
+      @include make-row();
+      margin-bottom: 50px;
+
+      .views-field-title{
+        @include make-xs-column(11.5);
+        margin-bottom: 10px;
+        margin-left: 15px;
+        padding: 0;
+        border-bottom: 1px solid $color-pink;
+        @media screen and (max-width: 991px) {
+          margin-left: 0;
+        }
+
+          a{
+            padding-left: 30px;
+            font-family: $base-font;
+            font-size: 27px;
+            color: $color-h;
+            text-decoration: none;
+            background: url("../img/leaf-blog.png") no-repeat 0;
+            @media screen and (max-width: 991px) {
+              padding-left: 25px;
+              font-size: 19px;
+            }
+
+            &:hover{
+              text-decoration: none;
+              color: $color-pink;
+              background: url("../img/leaf-blog-pink.png") no-repeat 0;
+            }
+          }
+      }
+
+      .views-field-filepath{
+        @include make-sm-column(12);
+        @include make-md-column(5);
+        max-width: 320px;
+        @media screen and (max-width: 991px) {
+          padding: 0;
+        }
+        @media screen and (max-width: 767px) {
+
+          img{
+            width: 100%;
+          }
+        }
+      }
+
+      .views-field-body{
+        @include make-sm-column(12);
+        @include make-md-column(7);
+        @extend p;
+        padding: 0;
+        line-height: 1.2;
+        color:#232222;
+      }
+
+      .views-field-view-node{
+        @include make-sm-column(12);
+        @include make-md-column(7);
+        @extend .pull-right;
+        text-align: right;
+        @media screen and (max-width: 991px) {
+          text-align: center;
+        }
+        @media screen and (max-width: 425px) {
+          float: none!important;
+        }
+
+
+        a{
+          display: inline-block;
+          margin-top: -20px;
+          padding-top: 20px;
+          width: 180px;
+          height: 64px;
+          font-size: 20px;
+          font-weight: 300;
+          text-align: center;
+          color: white;
+          text-decoration: none;
+          background: url("../img/button-blog.png") no-repeat 0;
+          @media screen and (max-width: 991px) {
+            margin-top: 0;
+          }
+
+          &:hover{
+            color: darken(white, 10%);
+          }
+        }
+      }
+    }
+  }
+}

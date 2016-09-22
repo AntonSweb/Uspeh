@@ -30,13 +30,15 @@ stylesheets[all][] = css/style.css
 ;; JavaScripts
 ;;;;;;;;;;;;;;;;;;;;;
 
-scripts[] = js/global.js
-;scripts[] = js/jquery.backTop.min.js
+scripts[] = js/jquery.backTop.min.js
+scripts[] = js/lyteShare.js
 ;scripts[] = js/jquery.mobile.custom.min.js
 ;scripts[] = js/jQuery.scrollSpeed.js
 ;scripts[] = js/parallax.min.js
 ;scripts[] = js/scrollup.js
 scripts[] = js/smoothscroll.js
+scripts[] = js/infinite-carousel-loop.js
+scripts[] = js/global.js
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Panels layouts

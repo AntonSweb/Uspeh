@@ -1,0 +1,99 @@
+.page-training-gallery, .page-cases, .node-type-case, .page-programs, .node-type-programs{
+
+  //Filters
+  #edit-tid-wrapper{
+    width: 100%;
+    padding-right: 0;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+
+    label {
+      float: left;
+      margin-top: -2px;
+      font-size: 19px;
+      font-weight: 300;
+      color: #939393;
+      @media screen and (max-width: 991px) {
+        font-size: 18px;
+      }
+      @media screen and (max-width: 767px) {
+        float: none;
+        font-size: 19px;
+      }
+
+      &:after{
+        content: ":";
+      }
+    }
+
+    .form-type-bef-link {
+      display: inline-block;
+      padding: 0 15px;
+      @media screen and (max-width: 767px) {
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      a {
+        font-size: 16px;
+        color: #0eac0f;
+        line-height: 1.2;
+        @media screen and (max-width: 767px) {
+          padding: 0 15px;
+          font-size: 19px;
+        }
+
+        &:hover{
+          color: $color-pink;
+        }
+
+        &.active {
+          padding-left: 25px;
+          font-size: 21px;
+          font-weight: 400;
+          color: $color-h;
+          line-height: 1;
+          text-decoration: none;
+          background: url("../img/leaf-contacts.png") no-repeat 0 5px;
+          @media screen and (max-width: 991px) {
+            font-size: 19px;
+          }
+          @media screen and (max-width: 767px) {
+            font-size: 21px;
+          }
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.node-type-case, .node-type-programs{
+
+  //Filters for programs and cases page
+  #edit-tid-wrapper {
+    margin-top: 60px;
+    @media screen and (min-width: 767px) {
+      text-align: center;
+
+      label {
+        float: none;
+      }
+
+      .views-widget {
+        display: inline-block;
+      }
+    }
+
+    .form-type-bef-link:not(:last-child) {
+      border-right: 1px solid $color-pink;
+      @media screen and (max-width: 767px) {
+        border: none;
+      }
+    }
+  }
+}

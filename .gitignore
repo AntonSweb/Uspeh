@@ -1,3 +1,4 @@
 # exclude development folder
 /.idea
 /.sass-cache
+/sass/.sass-cache

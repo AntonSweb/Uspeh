@@ -1,0 +1,37 @@
+.front, .page-cases{
+
+  .jcarousel-container{
+
+    .jcarousel-prev, .jcarousel-next{
+      @include transition(border 0.5s ease-in-out);
+      width: 40px;
+      height: 40px;
+      border-radius: 3px;
+      background: transparent;
+    }
+
+    .jcarousel-prev{
+      @include rotate(-45deg);
+      border-top: 4px solid lighten($color-h, 5%);
+      border-left: 4px solid lighten($color-h, 5%);
+
+      &:hover{
+        @include transition(border 0.5s ease-in-out);
+        border-top: 4px solid darken($color-h, 5%);
+        border-left: 4px solid darken($color-h, 5%);
+      }
+    }
+
+    .jcarousel-next{
+      @include rotate(45deg);
+      border-top: 4px solid lighten($color-h, 5%);
+      border-right: 4px solid lighten($color-h, 5%);
+
+      &:hover{
+        @include transition(border 0.5s ease-in-out);
+        border-top: 4px solid darken($color-h, 5%);
+        border-right: 4px solid darken($color-h, 5%);
+      }
+    }
+  }
+}

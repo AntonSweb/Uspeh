@@ -1,0 +1,193 @@
+.page-programs{
+
+  .pane-page-title{
+    margin-bottom: 40px;
+    text-align: center;
+
+    h1{
+      margin-top: 35px;
+    }
+  }
+
+  #edit-tid-wrapper{
+
+    label:after{
+      content: "";
+    }
+
+    .form-type-bef-link{
+      padding: 0 10px;
+
+      a{
+        font-size: 19px;
+
+        &.active{
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .view-programs > .view-content{
+    @include make-row();
+    @media screen and (max-width: 767px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .views-row-odd {
+      margin-right: 8px;
+      @media screen and (max-width: 1199px) {
+        margin-right: 0;
+      }
+    }
+
+    .views-row{
+      @include make-lg-column(6);
+      margin-bottom: 20px;
+      padding-left: 4px;
+      padding-right: 4px;
+      max-width: 580px;
+      border: 1px solid lighten($color-pink, 15%);
+      border-radius: 10px;
+      @media screen and (min-width: 1200px) {
+        height: 670px;
+      }
+      @media screen and (max-width: 1199px) {
+        margin: 0 auto 30px auto;
+      }
+
+      .views-field{
+
+        .views-label{
+          padding-left: 8px;
+          font-size: 18.67px;
+          font-weight: 400;
+          color: #7D7D7D;
+        }
+      }
+
+      .views-field-title{
+        padding: 3px 0;
+        text-align: center;
+
+        a{
+          font-size: 20px;
+          font-weight: 400;
+          color: $color-h;
+
+          &:hover{
+            color:  $color-pink;
+          }
+        }
+      }
+
+      .views-field-field-front-logo{
+
+        a {
+
+          img {
+            @include transition(all 0.7s ease-in-out);
+            margin: 0 auto;
+            border-radius: 5px;
+            @media screen and (min-width: 768px){
+              @include filter(grayscale(100%));
+            }
+          }
+
+          &:hover img{
+            @include transition(all 0.7s ease-in-out);
+            @include filter(grayscale(0));
+          }
+        }
+      }
+
+      .views-field-field-tasks{
+        margin-top: 5px;
+
+        ul{
+          margin-top: 5px;
+          padding-left: 8px;
+          @media screen and (min-width: 1200px) {
+            height: 146px;
+            overflow: hidden;
+          }
+
+          li{
+            margin-bottom: 13px;
+            padding-left: 30px;
+            min-height: 27px;
+            font-weight: 400;
+            color: black;
+            line-height: 1.2;
+            background: url("../img/leaf-program.png") no-repeat;
+            @media screen and (max-width: 767px) {
+
+            }
+
+            &:nth-child(4){
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+
+      .views-field-field-duration{
+        margin-top: 10px;
+
+        .field-content{
+          display: inline-block;
+          font-size: 18.67px;
+          font-weight: 400;
+          color: $color-h;
+        }
+      }
+
+      .views-field-view-node{
+        margin: 0 auto;
+        width: 199px;
+        height: 60px;
+        text-align: center;
+        background: url("../img/button-program.png") no-repeat;
+
+        @media screen and (min-width: 1200px) {
+          position: absolute;
+          right: 50%;
+          bottom: 5px;
+          margin-right: -100px;
+          width: 200px;
+          height: 55px;
+        }
+
+        a{
+          display: inline-block;
+          padding-top: 14px;
+          font-size: 19px;
+          color: white;
+          text-decoration: none;
+
+          &:hover{
+            text-decoration: none;
+            color: darken(white, 10%);
+          }
+
+          &:active{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .pager-load-more{
+
+    a{
+      &:before{
+        left: -42%;
+      }
+      &:after{
+        right: -42%;
+      }
+    }
+  }
+}
